@@ -1,5 +1,7 @@
 name: Blob storage website CI
 
+environment: prod
+
 # When this action will be executed
 on:
   # Automatically trigger it when detected changes in repo
@@ -24,6 +26,12 @@ jobs:
         with:
           inlineScript: |
               az storage blob upload-batch --account-name cosmicvibrations --auth-mode key -d '$web' -s .
+      
+      - name: Purge AFD cache
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+              az afd endpoint purge --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --profile-name ${{ secrets.AZURE_FRONT_DOOR_PROFILE }} --endpoint-name ${{ secrets.AZURE_FRONT_DOOR_ENDPOINT }} --domains cosmicvibrations.guitars --content-paths '/*'
               
     # Azure logout
       - name: logout
