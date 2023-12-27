@@ -1,1 +1,1 @@
-# This website is a very simple static website built to emulate the web 1.0 style of the late 90's/
+# Very professional web design for cosmic vibrations guitar company.
