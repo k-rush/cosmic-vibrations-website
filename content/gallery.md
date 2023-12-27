@@ -1,18 +1,21 @@
 ---
 Title: Gallery
-Date: 12/26/2023
+Date: 2023-12-26
 Icon: picture-o
 Gallery:
   -
-    url: "https://example.com"
-    image: "%assets_url%/image-one.png"
+    url: "/"
+    image: "%assets_url%/finished-1.jpg"
   -
-    url: "https://example.com"
-    image: "%assets_url%/image-two.png"
+    url: "/"
+    image: "%assets_url%/finished-2.jpg"
   -
-    url: "https://example.com"
-    image: "%assets_url%/image-three.png"
+    url: "/"
+    image: "%assets_url%/chisel.jpg"
   -
-    url: "https://example.com"
-    image: "%assets_url%/image-four.png"
+    url: "/"
+    image: "%assets_url%/cnc.jpg"
+  -
+    url: "/"
+    image: "%assets_url%/cnc-neck.jpg"
 ---
