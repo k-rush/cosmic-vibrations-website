@@ -27,6 +27,7 @@
     },
     "require": {
         "picocms/pico": "^2.1",
+        "picocms/pico-theme": "^2.1",
         "picocms/pico-deprecated": "^2.1",
         "picocms/composer-installer": "^1.0"
     },
