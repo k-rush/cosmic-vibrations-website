@@ -1,6 +1,6 @@
 ---
 Title: Gallery
-Date: 2016/12/08
+Date: 12/26/2023
 Icon: picture-o
 Gallery:
   -
@@ -16,5 +16,3 @@ Gallery:
     url: "https://example.com"
     image: "%assets_url%/image-four.png"
 ---
-
-This page is a sample image gallery.  You can create your own by using the YAML found in this example.

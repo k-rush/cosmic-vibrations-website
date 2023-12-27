@@ -1,8 +1,8 @@
 ---
 Title: Contact Me
-Date: 2016-12-09
+Date: 2023-12-26
 Icon: envelope
-Contact: "#"
+Contact: "kdr213@gmail.com"
 ---
 
 Get in touch with me using the email form below.
