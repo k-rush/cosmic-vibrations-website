@@ -6,6 +6,8 @@ on:
   push:
     branches: 
       [ master ]
+  workflow_dispatch:
+    
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -29,7 +31,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-              az afd endpoint purge --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --profile-name ${{ secrets.AZURE_FRONT_DOOR_PROFILE }} --endpoint-name ${{ secrets.AZURE_FRONT_DOOR_ENDPOINT_NAME }} --domains ${{ secrets.AZURE_FRONT_DOOR_DOMAINS }}
+              az afd endpoint purge --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --profile-name ${{ secrets.AZURE_FRONT_DOOR_PROFILE }} --endpoint-name ${{ secrets.AZURE_FRONT_DOOR_ENDPOINT_NAME }} --domains ${{ secrets.AZURE_FRONT_DOOR_DOMAINS }} --content-paths "/*"
               
     # Azure logout
       - name: logout
