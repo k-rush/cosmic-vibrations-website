@@ -3,33 +3,38 @@
 <head>
     <title>Cosmic Vibrations</title>
     <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            background-image: url('images/bg_stars.gif');
-            background-repeat: repeat;
-            color: white;
-            width: 25em;
-            text-align: center;
-        }
-        h1 {
-            font-family: 'Cinzel Decorative';
-        }
-        h2{
-            color: purple;
-            font-family: 'Cinzel Decorative';
-        }
-        img {
-            width: 15em;
-        }
-    </style>
+    <link rel="stylesheet" href="font/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="font/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="style/main.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="style/slideshow.css" type="text/css" charset="utf-8" />
+    <script type="text/javascript" src="scripts/slideshow.js"></script>
 </head>
-<body>
-    <h1><marquee>Cosmic Vibrations</marquee></h1>
-    <h2>☽★☾☽★☾☽★☾☽★☾☽★☾☽★☾☽★☾</h2>
-    <h3>Hand made in Seattle WA.</h3>
-    <img src="images/finished-2.jpg" />
+<body onload="showSlides(1)">
+    <div class="main-header">
+        <h1>Cosmic Vibrations</h1>
+        <h2>Hand made electric guitars, Seattle WA</h2>
+    </div>
+    <div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="images/finished-2.jpg" >
+            </div>  
+            <div class="mySlides fade">
+              <img src="images/finished-1.jpg" >
+            </div>  
+            <div class="mySlides fade">
+              <img src="images/build.jpg" >
+            </div>
+            <div class="mySlides fade">
+                <img src="images/chisel.jpg" >
+            </div>
+            <div class="mySlides fade">
+                <img src="images/cnc-neck.jpg" >
+            </div>
+            <div class="mySlides fade">
+                <img src="images/cnc.jpg" >
+            </div>  
+          </div>
+    </div>
 </body>
 </html>

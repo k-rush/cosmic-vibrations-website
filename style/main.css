@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+    font-family: 'kingthings_exeterregular', Arial, sans-serif;
+    font-size: 1.5em;
+    background-color: #000;
+    color: white;
+    width: 50em;
+    text-align: center;
+}
+h1{
+    font-family: 'kingthings_exeterregular', Arial, sans-serif;
+    color: #81efca;
+}
+h2{
+    font-family: 'kingthings_exeterregular', Arial, sans-serif;
+    color: #b896ef;
+}
+img {
+    width: 25em;
+}
+div.main-header {
+    margin-bottom: 25px;
+}
