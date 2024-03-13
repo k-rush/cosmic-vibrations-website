@@ -3,7 +3,7 @@ body {
     height: 100vh;
     background-image: url("../images/logo/cv-pattern-4.jpg");
     background-repeat: repeat;
-    background-size: 10em;
+    background-size: 100px;
     font-size: 1.0rem;
 }
 
@@ -14,7 +14,7 @@ body {
     font-family: 'kingthings_exeterregular', Arial, sans-serif;
     color: white;
     text-align: center;
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
 #nav-main {
