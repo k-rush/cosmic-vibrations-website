@@ -1,25 +1,121 @@
 body {
-    margin: 0;
-    padding: 20px;
-    height: 100%;
-    font-family: 'kingthings_exeterregular', Arial, sans-serif;
-    font-size: 1.5em;
-    background-color: #000;
-    color: white;
-    width: 50em;
-    text-align: center;
+    overflow: scroll;
+    height: 100vh;
+    background-image: url("../images/logo/cv-pattern-4.jpg");
+    background-repeat: repeat;
+    background-size: 10em;
+    font-size: 1.0rem;
 }
+
+#all {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    font-family: 'kingthings_exeterregular', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+#nav-main {
+    flex: 0 0 200px;
+    color: #81efca;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 3em;
+}
+
+#nav-main img {
+    max-width: 15em;
+    padding: 1em;
+}
+
+#nav-main ul {
+    padding: 1em 1em;
+    width: 100%;
+    list-style: none;
+}
+
+#nav-main li {
+    padding: 0.2em 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: left;
+    color: #f08a4f;
+}
+
+#nav-main li a { 
+    color: #f08a4f;
+}
+
+#nav-main li::before {    
+    content: url("../images/logo/cv-favicon-2.png");
+    padding-right: 8px;
+}
+
+div.main-header {
+    margin: 3em;
+}
+
+.main-container {
+    flex: 5 0;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 40em;
+    margin: 1em 1em;
+    scroll-behavior: auto;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.main-text, .main-image {
+    flex: 1;
+    font-family: Arial, sans-serif;    
+}
+
+.main-text {
+    padding: 0 20px;
+    align-items: center;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: fit-content;
+    height: auto;
+}
+
 h1{
     font-family: 'kingthings_exeterregular', Arial, sans-serif;
+    font-size: 2em;
     color: #81efca;
 }
 h2{
     font-family: 'kingthings_exeterregular', Arial, sans-serif;
+    font-size: 1.5em;
     color: #b896ef;
 }
-img {
-    width: 25em;
+a { 
+    color: #f08a4f;
 }
-div.main-header {
-    margin-bottom: 25px;
-}
+
+@media (max-width: 800px) {
+    #all {
+      flex-direction: column;
+    }
+    #nav-main {
+      flex-direction: row;
+    }
+    #nav-main img {
+        max-width: 8em;
+        padding: 1em;
+    }
+    div.main-header {
+        margin: 0 0;
+    }
+  }
