@@ -1,20 +1,23 @@
 body {
-    overflow: scroll;
-    height: 100vh;
+    overflow:visible;
+    height: auto;
     background-image: url("../images/logo/cv-pattern-4.jpg");
     background-repeat: repeat;
     background-size: 100px;
     font-size: 1.0rem;
 }
 
-#all {
+#background-grad {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+#main-flexbox {
     margin: 0;
-    height: 100vh;
+    height: auto;
     display: flex;
     font-family: 'kingthings_exeterregular', Arial, sans-serif;
     color: white;
     text-align: center;
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
 #nav-main {
@@ -90,6 +93,13 @@ div.main-header {
     height: auto;
 }
 
+#footer {
+    height: 10vh;
+    color: white;
+    text-align: center;
+    font-size: .5em;
+}
+
 h1{
     font-family: 'kingthings_exeterregular', Arial, sans-serif;
     font-size: 2em;
@@ -105,7 +115,7 @@ a {
 }
 
 @media (max-width: 800px) {
-    #all {
+    #main-flexbox {
       flex-direction: column;
     }
     #nav-main {
