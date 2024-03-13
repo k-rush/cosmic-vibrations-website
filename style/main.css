@@ -67,7 +67,7 @@ div.main-header {
     flex-wrap: wrap;
     align-items: center;
     max-width: 40em;
-    margin: 1em 1em;
+    margin: auto auto auto 6%;
     scroll-behavior: auto;
 }
 
@@ -113,7 +113,6 @@ h2{
 a { 
     color: #f08a4f;
 }
-
 @media (max-width: 800px) {
     #main-flexbox {
       flex-direction: column;
@@ -134,5 +133,8 @@ a {
     }
     div.main-header {
         margin: 0 0;
+    }
+    .main-section {
+        flex-direction: column;
     }
   }
