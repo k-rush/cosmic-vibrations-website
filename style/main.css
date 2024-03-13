@@ -124,6 +124,13 @@ a {
     #nav-main img {
         max-width: 8em;
         padding: 1em;
+    }    
+    #nav-main li {
+        padding: 0.1em 0.2em;
+        font-size: 1.5em;
+        text-decoration: none;
+        text-align: left;
+        color: #f08a4f;
     }
     div.main-header {
         margin: 0 0;
